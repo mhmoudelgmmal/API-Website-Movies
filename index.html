@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movies</title>
+   
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <header id="Home">
+       
+         <div id="navToggle" class="navToggle position-fixed navIn">
+           <div>
+             <img src="images/logo.png" class="w-100" alt="">
+           </div>
+           <div>
+             <i class="barr fa fa-align-justify"></i>
+           </div>
+           
+         <div>
+           <div>
+           
+            <i class="fa fa-xmark"></i>
+             <i class="fa fa-globe"></i>
+           </div>
+            <div>
+                <i class="fas fa-share-alt"></i>
+            </div>
+         </div>
+        </div>
+         <div class="navbarFixed ulIn">                     
+           <div class="ulParent">
+             <ul class="list-unstyled navTopIn" id="navLinks">
+               <li ><a class="text-decoration-none" data_nav="now_playing"  href="#">Now Playing</a></li>
+               <li><a class="text-decoration-none" data_nav="popular"  href="#">Popular</a></li>
+               <li><a class="text-decoration-none" data_nav="top_rated"  href="#">Top Rated</a></li>
+               <li><a class="text-decoration-none" data_nav="trending"  href="#">Trending</a></li>
+               <li><a class="text-decoration-none" data_nav="upcoming"  href="#">Upcoming</a></li>
+               <li><a class="text-decoration-none" href="#Contact">Contact Us</a></li>
+             </ul>     
+           </div>
+            <div class="copyRight">
+               
+               <div class="p-3">
+                 <i class="p-1 fab fa-facebook-f"></i>
+                 <i class="p-1 fab fa-twitter"></i>
+                 <i class="p-1 fas fa-globe"></i>
+               </div>
+               <p class="p-2">Copyright Â© 2019 All Rights Reserved.
+            </p>
+             </div>     
+         </div>
+         
+        
+        
+      </header>
+    <!-- navbar -->
+    <!-- movies content -->
+   <div class="movies">
+    <div class="container w-75">
+        <!-- search -->
+     <div class="searchbars">
+        <div class="inputParent">
+          <input id="searchWord" type="text" class="searchInput mb-5" placeholder="get movies by word">
+        </div>
+        <div class="inputParent">
+          <input id="searchInWebsite" type="text" class="searchInput  mb-5" placeholder="Search...">
+        </div>    
+   </div>
+   <div id="appendMovie" class="row">
+    
+    
+   </div>
+<!-- search -->
+    </div>
+   </div>
+ <!-- movies content -->
+ <!-- Contact us -->
+    <div id="Contact" class="contact">
+     <div class="container w-75">
+        <h1 class="text-light mt-5 mb-5">ContactUs...</h1>
+        <div class="row">
+            <div class="col-md-6 mt-3">
+                <input id="name" type="text" class="inputContact form-control" placeholder="Enter Your Name">
+                <div id="namealert" class=" alert alert-danger">Your name is not valid</div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <input id="email" type="text" class="inputContact form-control" placeholder="Enter Email ">
+                <div id="emailalert" class=" alert alert-danger">Enter valid Email</div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <input id="phone" type="text" class="inputContact form-control" placeholder="Enter Phone">
+                <div id="phoneAlert" class=" alert alert-danger">Enter valid Phone</div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <input id="age" type="text" class="inputContact form-control" placeholder="Enter Age">
+                <div id="ageAlert" class=" alert alert-danger">Enter valid age</div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <input id="password" type="text" class="inputContact form-control" placeholder="Enter Password">
+                 <div id="passwordAlert" class=" alert alert-danger">entre valid password *Minimum eight characters, at least one letter and one number:*</div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <input id="rePassword" type="text" class="inputContact form-control" placeholder="Enter Repassword">
+                <div id="rePasswordAlert" class=" alert alert-danger">This password isn't match</div>
+            </div>
+            
+        </div>
+        <input id="submit" class="btnSubmit p-2 mt-5 mb-5" type="button" value="Submit">
+     </div>
+   </div>
+
+ <!-- Contact us -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

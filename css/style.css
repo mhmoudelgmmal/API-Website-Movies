@@ -1,0 +1,178 @@
+body{
+    background-color: black;
+    height: 1000px;
+   
+}
+
+/* navbar */
+.navToggle{
+    position: absolute;
+    top:0;
+    color: white;
+    font-weight: bold;
+    font-size:20px;
+    height: 100vh;
+    width: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 99999;
+}
+.navToggle div{
+    width:40px;
+    margin: 20px auto;
+}
+.navToggle div .barr{
+    cursor: pointer;
+}
+.navToggle div i{
+    display: block;
+    width:20px;
+    margin: 0 auto;
+}
+.navToggle i{
+    color: black;
+}
+
+.navbarFixed{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top:0;
+    z-index: 99999;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navbarFixed .ulParent{
+    height: 50%;
+    overflow: hidden;
+
+}
+.navIn{
+    left:0;
+    transition: .5s all;
+}
+.navOut{
+     left:250px;
+     transition: .5s all;
+}
+.ulIn{
+    left:-250px;
+    transition: .5s all;
+}
+.ulOut{
+     left:0;
+     transition: .5s all;
+}
+
+#navLinks{
+    margin-left: 20px;
+    transition: 1.5s all;
+}
+
+#navLinks li{
+    font-size: 14px;
+    cursor:pointer;
+    margin-bottom: 30px;
+    margin-top: 160%;
+    color: white;
+    opacity: 0;
+}
+#navLinks li a{
+    color: white;
+    transition: .3s all;
+}
+#navLinks li a:hover{
+    color:#dc3545;
+}
+
+
+.copyRight {
+    color:white;
+    margin-top: 60px;
+   
+}
+.copyRight i{
+    transition: .3s all;
+    cursor: pointer;
+}
+.copyRight i:hover{
+    color:#dc3545;
+}
+
+/* navbar */
+/* movies */
+
+/* Search */
+.searchbars{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.searchbars .inputParent{
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+}
+.searchInput{
+    width: 90%;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    color:aliceblue;
+}
+/* Search */
+
+#oneMovie{
+    overflow: hidden;
+}
+#oneMovie .movImg{
+    border-radius: 10px;
+}
+#oneMovie .layer{
+    background-color: rgba(255,255,255,.7);
+    position: absolute;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    transition: 1s all;
+}
+#oneMovie:hover .layer{
+    top: 0;
+}
+#oneMovie .layer h2{
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+#oneMovie .layer p{
+    font-size: 14px;
+}
+/* movies */
+/* contact */
+.contact .inputContact{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    color:aliceblue;
+}
+.contact .btnSubmit{
+    background-color: transparent;
+    color:#dc3545;
+    border: 1px solid #dc3545;
+    border-radius: 5px;
+}
+.alert{
+    display: none;
+}
+/* contact */
